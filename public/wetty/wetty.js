@@ -39,6 +39,11 @@ socket.on('connect', function() {
         term.prefs_.set('scrollbar-visible', false);
         term.prefs_.set('audible-bell-sound', '')
 
+        // Change the font
+        term.prefs_.set('font-family', "'Ubuntu Mono', monospace",);
+        term.prefs_.set('font-size', 16);
+        term.prefs_.set('font-smoothing', 'subpixel-antialiased');
+
         // https://gist.github.com/johnbender/5018685
         // Disable bold.
         term.prefs_.set('enable-bold', false)
